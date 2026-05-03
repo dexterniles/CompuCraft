@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -41,10 +42,18 @@ export function Header() {
       <Container size="wide" className="flex h-16 items-center justify-between">
         <Link
           href="/"
-          className="text-lg font-semibold tracking-tight text-[var(--color-text)] transition-colors hover:text-[var(--color-accent)]"
+          className="flex items-center gap-2.5 text-lg font-semibold tracking-tight text-[var(--color-text)] transition-colors hover:text-[var(--color-accent)]"
           aria-label={`${site.name} — home`}
         >
-          {site.name}
+          <Image
+            src="/logo.png"
+            alt=""
+            width={32}
+            height={32}
+            priority
+            className="h-7 w-7 rounded-md sm:h-8 sm:w-8"
+          />
+          <span>{site.name}</span>
         </Link>
 
         <nav aria-label="Primary" className="hidden md:block">

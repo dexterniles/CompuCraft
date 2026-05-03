@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "./Container";
 import { site } from "@/content/site";
@@ -20,7 +21,22 @@ export function Footer() {
         className="grid gap-10 py-14 sm:grid-cols-2 md:grid-cols-3"
       >
         <div>
-          <p className="text-lg font-semibold tracking-tight">{site.name}</p>
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2.5 transition-colors hover:text-[var(--color-accent)]"
+            aria-label={`${site.name} — home`}
+          >
+            <Image
+              src="/logo.png"
+              alt=""
+              width={28}
+              height={28}
+              className="h-6 w-6 rounded-md"
+            />
+            <span className="text-lg font-semibold tracking-tight">
+              {site.name}
+            </span>
+          </Link>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-[var(--color-text-muted)]">
             {site.shortTagline} Hourly billing, written estimates, and a 30-day
             labor warranty.

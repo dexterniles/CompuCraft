@@ -70,6 +70,28 @@ To add a new FAQ, append to the `faqs` array. To change the rate, edit `pricing.
 
 ---
 
+## Updating the logo
+
+The logo lives in three places:
+
+| Path                       | Purpose                                                |
+| -------------------------- | ------------------------------------------------------ |
+| `public/logo.png`          | Source (2048x2048). Used by header, footer, OG image, and manifest. |
+| `app/icon.png`             | 256x256. Next.js convention — becomes the favicon.     |
+| `app/apple-icon.png`       | 180x180. Next.js convention — becomes the iOS touch icon. |
+
+To replace the logo:
+
+```bash
+# Drop the new high-res PNG at public/logo.png, then regenerate the smaller variants:
+sips -Z 256 public/logo.png --out app/icon.png
+sips -Z 180 public/logo.png --out app/apple-icon.png
+```
+
+If the new logo's dominant color is no longer terracotta, update `--color-accent` in [`app/globals.css`](app/globals.css) to match.
+
+---
+
 ## Swapping in real photos
 
 Placeholders use [`PlaceholderImage`](components/ui/PlaceholderImage.tsx), which is a labeled neutral block. Each one carries a descriptive `label` / `alt` that matches the eventual photo.

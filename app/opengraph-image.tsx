@@ -1,3 +1,5 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { site } from "@/content/site";
 
@@ -6,6 +8,11 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function OpengraphImage() {
+  const logoBuffer = await readFile(
+    join(process.cwd(), "public", "logo.png"),
+  );
+  const logoSrc = `data:image/png;base64,${logoBuffer.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -25,19 +32,18 @@ export default async function OpengraphImage() {
           style={{
             display: "flex",
             alignItems: "center",
-            gap: 16,
-            fontSize: 28,
+            gap: 20,
+            fontSize: 32,
             fontWeight: 600,
             letterSpacing: "-0.02em",
           }}
         >
-          <div
-            style={{
-              width: 14,
-              height: 14,
-              borderRadius: 999,
-              background: "#B8533A",
-            }}
+          <img
+            src={logoSrc}
+            width={80}
+            height={80}
+            style={{ borderRadius: 16 }}
+            alt=""
           />
           {site.name}
         </div>
