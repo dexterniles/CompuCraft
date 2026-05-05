@@ -1,8 +1,8 @@
 import { Container } from "@/components/layout/Container";
-import { LinkButton } from "@/components/ui/Button";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { ContactCTA } from "@/components/sections/ContactCTA";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
@@ -33,13 +33,8 @@ export default function GalleryPage() {
             level={1}
             eyebrow="Gallery"
             title="Photos coming soon."
-            intro="Real customer-build photos will be posted here as projects complete. The placeholders below show the kinds of shots planned — front of the case, cable work in the back, thermal paste jobs, NAS installs, and so on."
+            intro="Real customer-build photos will be posted here as projects complete."
           />
-          <div className="mt-9">
-            <LinkButton href="/contact" variant="primary">
-              Have a build in mind?
-            </LinkButton>
-          </div>
         </Container>
       </section>
 
@@ -57,6 +52,11 @@ export default function GalleryPage() {
           </div>
         </FadeIn>
       </Container>
+
+      <ContactCTA
+        heading="Have a build in mind?"
+        body="Tell me what you're after and I'll send back a written estimate."
+      />
     </>
   );
 }

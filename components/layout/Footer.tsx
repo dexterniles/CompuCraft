@@ -70,20 +70,18 @@ export function Footer() {
                 {contact.email}
               </a>
             </li>
-            <li className="text-[var(--color-text-muted)]">
-              {contact.messengerAvailable && contact.messengerUrl ? (
+            {contact.messengerAvailable && contact.messengerUrl ? (
+              <li>
                 <a
                   href={contact.messengerUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-[var(--color-accent)]"
+                  className="text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent)]"
                 >
                   Facebook Messenger
                 </a>
-              ) : (
-                <span>Facebook Messenger — coming soon</span>
-              )}
-            </li>
+              </li>
+            ) : null}
             <li className="text-[var(--color-text-muted)]">
               Based in {site.baseLocation}
             </li>

@@ -14,9 +14,8 @@ export function Hero() {
             {site.tagline}
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[var(--color-text-muted)] text-pretty sm:text-xl">
-            Builds, upgrades, diagnostics, basic networking, and home media
-            servers. Hourly billing with a written estimate up front and a
-            30-day labor warranty.
+            Builds, upgrades, diagnostics, networking, and home media servers.
+            Hourly rate, written estimate, 30-day labor warranty.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <LinkButton href="/contact" variant="primary">

@@ -10,9 +10,7 @@ import { site } from "@/content/site";
 const navLinks = [
   { href: "/services", label: "Services" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/gallery", label: "Gallery" },
   { href: "/faq", label: "FAQ" },
-  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
 

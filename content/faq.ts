@@ -5,10 +5,6 @@ export type FAQ = {
 
 export const faqs: FAQ[] = [
   {
-    q: "Do you build PCs for crypto mining, AI workstations, or servers?",
-    a: "Standard gaming and productivity builds only. Specialty workloads aren't part of the service.",
-  },
-  {
     q: "Can you transfer files from my old PC to the new one?",
     a: "Yes, as long as the old drive is functional. This is billed hourly along with the rest of the work.",
   },
@@ -18,11 +14,11 @@ export const faqs: FAQ[] = [
   },
   {
     q: "Can you work on Macs or laptops?",
-    a: "Yes — Mac and laptop work is offered in the same capacity as desktop PC work: RAM and SSD upgrades, OS reinstalls, cleaning, thermal paste, diagnostics, and general troubleshooting. Hardware-level repairs like screen replacements, keyboard replacements, or board-level work aren't offered.",
+    a: "Yes — Mac and laptop work covers RAM/SSD upgrades, OS reinstalls, cleaning, thermal paste, and diagnostics. Hardware-level repairs (screens, keyboards, board-level) aren't offered.",
   },
   {
     q: "What if I already bought parts that turn out to be incompatible?",
-    a: "I'll let you know during the consultation or as soon as I see them. Returning incompatible parts is the customer's responsibility, but I'll help identify the right replacement.",
+    a: "I'll flag incompatibilities during consultation. Returning the parts is your responsibility, but I'll help identify the right replacement.",
   },
   {
     q: "Do you provide a written quote before starting work?",
@@ -37,16 +33,8 @@ export const faqs: FAQ[] = [
     a: "Basic XMP/EXPO memory tuning and minor undervolting yes. Aggressive overclocking, no.",
   },
   {
-    q: "Do you offer payment plans?",
-    a: "No. Payment is due on completion for service work, and parts are paid in full before ordering.",
-  },
-  {
     q: "How far in advance do I need to book?",
     a: "Depends on workload. Reach out and I'll give you a realistic timeline.",
-  },
-  {
-    q: "Do you do business or commercial work?",
-    a: "Residential only at this time.",
   },
   {
     q: "Is the diagnostic fee refunded if you can't fix the problem?",

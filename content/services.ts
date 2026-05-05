@@ -16,11 +16,9 @@ export const serviceCategories: ServiceCategory[] = [
       "Custom PC builds (gaming, productivity, budget to high-end)",
       "Component upgrades — GPU, RAM, storage, cooling, PSU (desktops); RAM and storage upgrades where supported (laptops and Macs)",
       "Diagnostics and troubleshooting (won't boot, BSODs, kernel panics, overheating, crashes)",
-      "OS installation and driver setup (Windows and macOS)",
-      "Cleaning, thermal paste / pad replacement",
-      "Cable management and aesthetic rework",
-      "BIOS / firmware updates, XMP/EXPO setup, fan curve tuning",
-      "Performance tune-ups (startup cleanup, bloatware removal)",
+      "OS installation, driver setup, and tune-ups (Windows and macOS)",
+      "Cleaning, thermal paste / pad replacement, and cable management",
+      "BIOS, XMP/EXPO, and fan-curve tuning",
     ],
   },
   {
@@ -35,7 +33,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Basic Wi-Fi troubleshooting",
     ],
     note:
-      "Anything beyond standard ISP router work — VLANs, VPNs, pi-hole, advanced firewall rules, business-grade equipment — is outside the scope of this service.",
+      "Advanced networking (VLANs, VPNs, pi-hole, business-grade gear) is outside scope.",
   },
   {
     id: "servers",
@@ -54,4 +52,7 @@ export const serviceCategories: ServiceCategory[] = [
 export const notOffered: string[] = [
   "Data recovery or hard drive repair (no equipment for it)",
   "Laptop or Mac hardware-level repairs (screen, keyboard, battery, or board-level work)",
+  "Specialty workloads — crypto mining, AI workstations, dedicated servers",
+  "Business or commercial work — residential only",
+  "Payment plans or financing — payment is due on completion",
 ];

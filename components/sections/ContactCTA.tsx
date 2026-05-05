@@ -9,7 +9,7 @@ type ContactCTAProps = {
 
 export function ContactCTA({
   heading = "Have a project in mind?",
-  body = "Send a quick note describing what you're looking for. I'll reply with a written estimate, a time range, and any clarifying questions.",
+  body = "Send a description and I'll reply with a written estimate and a time range.",
 }: ContactCTAProps) {
   return (
     <section className="bg-[var(--color-surface-warm)] py-20 sm:py-24">
@@ -22,12 +22,9 @@ export function ContactCTA({
             <p className="mx-auto mt-5 max-w-prose text-pretty text-lg leading-relaxed text-[var(--color-text-muted)]">
               {body}
             </p>
-            <div className="mt-9 flex flex-wrap justify-center gap-3">
+            <div className="mt-9 flex justify-center">
               <LinkButton href="/contact" variant="primary">
                 Get in touch
-              </LinkButton>
-              <LinkButton href="/pricing" variant="ghost">
-                See pricing →
               </LinkButton>
             </div>
           </div>

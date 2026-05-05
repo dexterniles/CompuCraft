@@ -13,7 +13,7 @@ export function PricingPreview() {
             <SectionHeading
               eyebrow="Pricing"
               title="Hourly, with a written estimate."
-              intro="You only pay for the time the job actually takes. Every quote includes an estimated time range up front. If a job runs more than 25% over the estimate, work stops and we talk before continuing."
+              intro="You only pay for time spent. Every quote has an estimated range up front. If a job runs >25% over, I stop and check in."
             />
             <div className="mt-8">
               <LinkButton href="/pricing" variant="secondary">

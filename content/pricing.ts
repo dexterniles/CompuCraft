@@ -44,7 +44,7 @@ export const networkServerEstimates: TimeEstimate[] = [
 ];
 
 export const mediaServerNote =
-  "Base media server setup covers getting the device installed, configured, and successfully streaming video to one display of the customer's choice. Anything beyond that is an add-on.";
+  "Base media server setup includes install, configuration, and streaming to one display. Anything beyond that is an add-on.";
 
 export const travel = {
   freeRadiusMiles: 15,
@@ -56,7 +56,7 @@ export const travel = {
 };
 
 export const partsPolicy =
-  "If the customer would like CompuCraft to handle parts sourcing, full payment for the parts must be received before any orders are placed. No parts are fronted. After the parts list is agreed upon, the customer sends payment, parts are ordered, and the build is scheduled once everything arrives.";
+  "If you'd like me to source the parts, full payment is required up front. After the list is agreed and payment received, I order the parts and schedule the build once they arrive.";
 
 export const paymentMethods = ["Cash", "Venmo", "Cash App", "Zelle"];
 export const paymentMethodsNote = "No credit or debit cards.";

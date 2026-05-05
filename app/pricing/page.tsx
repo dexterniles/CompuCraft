@@ -85,7 +85,7 @@ export default function PricingPage() {
             level={1}
             eyebrow="Pricing"
             title="Hourly billing, no surprises."
-            intro={pricing.hourlyExplanation}
+            intro="You only pay for time spent. Every quote has a written estimate up front. If a job runs >25% over, I stop and check in."
           />
         </Container>
       </section>
@@ -127,8 +127,8 @@ export default function PricingPage() {
                 Free within {travel.freeRadiusMiles} miles of North Attleboro.
               </p>
               <p className="mt-2 text-sm text-[var(--color-text-muted)]">
-                ${travel.surchargePerExtraTen} per additional 10 miles. No
-                travel beyond ~{travel.maxRadiusMiles} miles.
+                ${travel.surchargePerExtraTen} per additional 10 miles, up to ~
+                {travel.maxRadiusMiles}. Drop-off also available.
               </p>
             </div>
           </FadeIn>
@@ -176,18 +176,6 @@ export default function PricingPage() {
           <div className="grid gap-10 md:grid-cols-2">
             <FadeIn>
               <h2 className="text-xl font-semibold tracking-tight">
-                Travel & drop-off
-              </h2>
-              <p className="mt-4 max-w-prose leading-relaxed text-[var(--color-text-muted)]">
-                {travel.description}
-              </p>
-              <p className="mt-3 text-[var(--color-text-muted)]">
-                {travel.dropOff}
-              </p>
-            </FadeIn>
-
-            <FadeIn delay={0.05}>
-              <h2 className="text-xl font-semibold tracking-tight">
                 Parts purchasing
               </h2>
               <p className="mt-4 max-w-prose leading-relaxed text-[var(--color-text-muted)]">
@@ -195,7 +183,7 @@ export default function PricingPage() {
               </p>
             </FadeIn>
 
-            <FadeIn>
+            <FadeIn delay={0.05}>
               <h2 className="text-xl font-semibold tracking-tight">
                 Payment methods
               </h2>
@@ -214,7 +202,7 @@ export default function PricingPage() {
               </p>
             </FadeIn>
 
-            <FadeIn delay={0.05}>
+            <FadeIn className="md:col-span-2">
               <h2 className="text-xl font-semibold tracking-tight">
                 {warranty.laborTitle}
               </h2>

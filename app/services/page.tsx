@@ -21,7 +21,6 @@ export default function ServicesPage() {
             level={1}
             eyebrow="Services"
             title="What's offered, in plain terms."
-            intro="Three core areas: building and maintaining computers, basic networking for home use, and home media servers and storage."
           />
         </Container>
       </section>
@@ -41,11 +40,8 @@ export default function ServicesPage() {
                 <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
                   {cat.title}
                 </h2>
-                <p className="mt-4 max-w-prose text-lg leading-relaxed text-[var(--color-text-muted)]">
-                  {cat.summary}
-                </p>
 
-                <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+                <ul className="mt-6 grid gap-3 sm:grid-cols-2">
                   {cat.items.map((item) => (
                     <li
                       key={item}
